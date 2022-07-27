@@ -1,0 +1,89 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Fira Code', monospace;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(45deg, #8fc0c4, rgb(69, 92, 136));
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: black;
+
+  border-radius: 1.5rem;
+  padding: 4rem;
+}
+
+.calculadora {
+display: grid;
+ gap: 1rem;
+ font-weight: 500;
+}
+
+.calculadora div{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+justify-content: center;
+gap: 0.5rem;
+
+}
+
+.calculadora  div.display {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 4rem;
+  width: 15rem;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+ padding-right: 1rem;
+  background: aliceblue;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  padding: 0.5rem;
+
+  border: none;
+  border-radius: 0.5rem;
+  background-color: lightblue;
+  color: black;
+
+  font-size: 2rem;
+ 
+}
+
+button:hover {
+  opacity: 0.6;
+  transition-property: opacity;
+  transition-duration: 0.2s;
+}
+
+.buttons button:nth-child(18){
+  grid-row-start: 4;
+  grid-row-end: 6;
+  grid-column-start: 4;
+  background: yellow;  
+}
+
+.buttons button:nth-child(16){
+  grid-column-start: 1;
+  grid-column-end: 3;
+    
+}
+
+
+

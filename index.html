@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link 
+href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" 
+rel="stylesheet"
+>
+  <link rel="stylesheet" href="./style.css">
+  <title>Calculadora</title>
+</head>
+<body>
+  <div class="container">
+    <div class="calculadora">
+      <div class="display">0</div>
+      <div class="buttons">
+        <button onclick="clearDisplay('*')">C</button>
+        <button onclick="backDisplay()"><-</button>
+        <button onclick="addDisplay('*')">*</button>
+        <button onclick="addDisplay('-')">-</button>
+
+        <button onclick="addDisplay(7)">7</button>
+        <button onclick="addDisplay(8)">8</button>
+        <button onclick="addDisplay(9)">9</button>
+        <button onclick="addDisplay('+')">+</button>
+
+        <button onclick="addDisplay(4)">4</button>
+        <button onclick="addDisplay(5)">5</button>
+        <button onclick="addDisplay(6)">6</button>
+        <button onclick="addDisplay('/')">/</button>
+
+        <button onclick="addDisplay(1)">1</button>
+        <button onclick="addNumber(2)">2</button>
+        <button onclick="addDisplay(3)">3</button>
+       
+
+        <button onclick="addDisplay('0')">0</button>
+        <button onclick="addDisplay('.')">.</button>
+        <button onclick="result()">=</button>  
+      </div>  
+    </div> 
+  </div>
+  <script src="./main.js" type="text/javascript"></script>
+</body>
+</html>
