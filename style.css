@@ -1,10 +1,17 @@
+/* ======= ROOT ======= */
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: 'Fira Code', monospace;
+
+  --bg-color: black;
+  --bg-display-color: rgb(240, 248, 255);
+  --bg-button-color: lightblue;
+  --bg-button-result: rgb(167, 90, 190);
 }
 
+/* ======= BODY ======= */
 body {
   display: flex;
   justify-content: center;
@@ -13,24 +20,25 @@ body {
   background: linear-gradient(45deg, #8fc0c4, rgb(69, 92, 136));
 }
 
+/* ======= CALCULATOR ======= */
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
 
-  background: black;
+  background: var(--bg-color);
 
   border-radius: 1.5rem;
   padding: 4rem;
 }
 
-.calculadora {
+.calculator {
 display: grid;
  gap: 1rem;
  font-weight: 500;
 }
 
-.calculadora div{
+.calculator div{
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr;
 justify-content: center;
@@ -38,7 +46,8 @@ gap: 0.5rem;
 
 }
 
-.calculadora  div.display {
+/* ======= DISPLAY ======= */
+.calculator  div.display {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -47,9 +56,10 @@ gap: 0.5rem;
   border-radius: 0.5rem;
   font-size: 2rem;
  padding-right: 1rem;
-  background: aliceblue;
+  background: var(--bg-display-color);
 }
 
+/* ======= BUTTONS ======= */
 button {
   display: flex;
   align-items: center;
@@ -59,8 +69,8 @@ button {
 
   border: none;
   border-radius: 0.5rem;
-  background-color: lightblue;
-  color: black;
+  background-color: var(--bg-button-color);
+  color: var(--bg-color);
 
   font-size: 2rem;
  
@@ -76,7 +86,7 @@ button:hover {
   grid-row-start: 4;
   grid-row-end: 6;
   grid-column-start: 4;
-  background: yellow;  
+  background: var(--bg-button-result);  
 }
 
 .buttons button:nth-child(16){
