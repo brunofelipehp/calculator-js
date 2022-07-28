@@ -7,7 +7,7 @@ function clearDisplay() {
 
 //add math expression to the display
 function addDisplay(value){
-  if (display.innerHTML == "0") {
+  if (display.innerHTML == 0) {
     display.innerHTML = ""
     number = display.innerHTML
   display.innerHTML = number + value
